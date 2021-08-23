@@ -868,6 +868,7 @@ img.pull-right {
 
 .features-icons {
   background-color: #F2F4F9;
+  padding-bottom: 130px !important;
 }
 
 .features-icons .media-body {
@@ -891,6 +892,23 @@ img.pull-right {
   position: absolute;
   top: 28px;
   left: 0px;
+}
+
+.features-icons:after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  height: 200px;
+  width: 130%;
+  background-color: #fff;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  z-index: 10;
+}
+
+.section-events {
+  padding-top: 140px;
 }
 
 .section-events .features-icons-item {

@@ -380,6 +380,7 @@
 
 .features-icons{
    background-color: #F2F4F9;
+   padding-bottom: 130px !important ;
    .media-body{
       padding: 18px 28px;
       position: relative;
@@ -402,7 +403,20 @@
       }
    }
 }
+.features-icons:after{
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  height: 200px;
+  width: 130%;
+  background-color: #fff;
+  -webkit-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+  z-index: 10;
+}
 .section-events{
+  padding-top: 140px;
    .features-icons-item{
       text-align: center;
       
