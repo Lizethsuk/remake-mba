@@ -795,6 +795,14 @@ img.pull-right {
   max-width: 590px;
 }
 
+.pb_form_v1 a {
+  color: #c1b170;
+}
+
+.pb_form_v1 .btn {
+  width: 100%;
+}
+
 .foot-area {
   background-color: black;
 }
@@ -853,6 +861,12 @@ img.pull-right {
   color: #fff;
 }
 
+.hero-area .banner-item .banner-content-wrap .banner-p {
+  font-size: 20px !important;
+  text-align: center;
+  color: #fff;
+}
+
 @media (min-width: 1400px) {
   .hero-area.content-left .banner-item {
     margin-left: auto;
@@ -881,11 +895,12 @@ img.pull-right {
 .features-icons .media-body blockquote::before {
   content: '“';
   font-size: 160px;
-  color: #555555;
+  color: #dee2e6;
   font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
   position: absolute;
   top: 28px;
   left: 0px;
+  z-index: 0;
 }
 
 .features-icons:after {

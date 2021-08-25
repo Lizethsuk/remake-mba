@@ -306,6 +306,12 @@
    padding: 40px;
    background-color: rgba(18,18,18,0.9);
    max-width: 590px;
+   a{
+      color: $primary-color;
+   }
+   .btn{
+      width: 100%;
+   }
 }
 .foot-area{
    background-color: black;
@@ -363,6 +369,11 @@
                   color: $white-color;
                }
             }
+            .banner-p{
+               font-size: 20px!important;
+               text-align: center;
+               color: $white-color;
+            }
          }
       }
 }
@@ -393,12 +404,14 @@
          &::before{
             content: '“';
             font-size: 160px;
-            color: #555555;
+            color: #dee2e6;
 
             font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
             position: absolute;
             top: 28px;
             left: 0px;
+            z-index: 0;
+            
          }
       }
    }
