@@ -71,82 +71,6 @@ tab rotate
       height: auto;
    }
 
-   //speaker
-   .ts-speaker .speaker-img {
-      width: 205px;
-      height: 205px;
-   }
-
-   .speaker-classic {
-      .ts-title {
-         font-size: 20px;
-      }
-   }
-
-   // shap img
-   .speaker-shap {
-      display: none;
-   }
-
-   h2 {
-      line-height: 28px;
-   }
-
-   .ts-map .mapouter .gmap_canvas {
-      width: 400px;
-      height: 400px;
-      ;
-   }
-
-   // ts outcome
-   .ts-single-outcome {
-      width: 210px;
-      height: 210px;
-
-      i {
-         font-size: 60px;
-         margin-bottom: 15px;
-      }
-   }
-
-   //sidebar 
-   .social-box ul li a {
-      margin-right: 0;
-   }
-
-   // post
-   .post .post-body .entry-header .entry-title {
-      font-size: 24px;
-      line-height: 28px;
-   }
-
-   .ts-blog .post .post-body .entry-header .entry-title {
-      font-size: 20px;
-   }
-
-   // experience
-   .ts-exp-wrap .ts-exp-content .column-title {
-      font-size: 32px;
-   }
-   .ts-title {
-      font-size: 23px;
-      line-height: 22px;
-   }
-   .ts-intro.event-intro{
-   
-     
-     
-     
-      .single-intro-text{
-         padding:20px 13px 20px;
-         img{
-            width: 95px;
-            margin-bottom: 0px;
-         }
-         
-      }
-    
-   }
 
 }
 
@@ -159,21 +83,7 @@ tab device
       font-size: 27px;
       line-height: 27px;
    }
-   .ts-intro.event-intro{
-   
- 
-     
-     
-      .single-intro-text{
-         padding:20px 20px 20px;
-         img{
-            width: 95px;
-            margin-bottom: 0px;
-         }         
-      }
-    
-   }
-   
+
    .dropdown-menu.show {
       display: block;
    }
@@ -265,13 +175,7 @@ tab device
       padding: 10px 0;
    }
 
-   .header ul.navbar-nav>li.header-ticket {
-      padding: 0 15px;
-
-      .ticket-btn {
-         margin-left: 0;
-      }
-   }
+ 
 
    // banner 
    .banner-img {
@@ -312,28 +216,16 @@ tab device
       margin: 0;
       height: auto!important;
 
-      .banner-content-wrap {
-         padding: 115px 0 40px;
-      }
-   }
-
-   // hero index 5
-   .hero-speakers {
-      .banner-item {
+      .banner-item{
+         margin: 50px 0px 0px;
          .banner-content-wrap {
-            padding: 160px 0 0;
+            padding: 115px 0 40px;
          }
       }
    }
 
-   .hero-form-content {
-      margin-top: 50px;
-      margin-bottom: 60px;
+ 
 
-      h2 {
-         font-size: 30px;
-      }
-   }
 
 
   
@@ -389,19 +281,7 @@ tab device
       }
    }
 
-   // footer index 4
-   .ts-footer.ts-footer-item {
-
-      .footer-menu,
-      .ts-footer-social,
-      .copyright-text.text-right {
-         text-align: center !important;
-      }
-
-      .newsletter-form {
-         margin-top: 40px;
-      }
-   }
+ 
 
    //Navigation scroll
    .header .navbar-collapse {
@@ -439,10 +319,6 @@ small device /mobile sm and large
    }
 
  
-
-   h2 {
-      line-height: 28px;
-   }
 
 
 
@@ -521,7 +397,7 @@ small device /mobile sm and large
    .header .navbar-brand {
       padding: 0 ;
       img {
-         max-width: 330px;
+         max-width: 210px;
       }
    }
 
@@ -564,78 +440,9 @@ small device /mobile sm and large
       display: none;
    }
 
-   .banner-item {
-      min-height: 550px;
+  
 
-      .banner-content-wrap {
-         padding: 90px 0 50px!important;
-
-         p.banner-info {
-            font-size: 18px;
-         }
-
-         h1.banner-title {
-            font-size: 28px;
-            font-size: 30px;
-            margin-bottom: 35px;
-            line-height: 40px;
-            font-weight: bold;
-         }
-
-         .countdown {
-            margin-bottom: 40px;
-
-            .counter-item {
-               margin-bottom: 20px;
-            }
-         }
-
-         .banner-btn {
-            .btn {
-               margin-bottom: 15px;
-               margin-right: 15px;
-
-               &.fill {
-                  margin-left: 0;
-               }
-            }
-         }
-      }
-   }
-
-   .banner-6 {
-      .banner-item {
-         .banner-content-wrap {
-            .banner-title{
-               font-size: 36px;
-               line-height: 1.2;
-            }
-         }
-      }
-      &-alt{
-         .banner-item{
-            .banner-content-wrap{
-               .banner-title{
-                  margin-bottom: 50px;
-               }
-            }
-            .banner-image{
-               img{
-                  width: 100%;
-                  display: none;
-               }
-            }
-         }
-      }
-   }
-   .ts-exprience {
-      .ts-exprience-content{
-         h2{
-            font-size: 24px;
-            line-height: 1.2;
-         }
-      }
-   }
+ 
    .hero-area {
    
       background-image: url('../images/banner/01-KvBrochure-B2B_web.jpg');
@@ -643,30 +450,35 @@ small device /mobile sm and large
       background-size: cover; 
       background-attachment: scroll; 
          background-position: center 85%;
+         .banner-item {
+            min-height: 550px;
+            margin: 65px 0px 0px;
+      
+            .banner-content-wrap {
+               padding: 90px 0 50px;
+      
+               p.banner-info {
+                  font-size: 18px;
+               }
+      
+               .banner-title {
+                  font-size: 28px;
+                  font-size: 30px;
+                  margin-bottom: 35px;
+                  line-height: 40px;
+                  font-weight: bold;
+               }
+      
+      
+             
+            }
+         }
 
    }
  
    // index 3 slider
 
-   .main-slider {
-      .banner-item {
-         min-height: 800px;
-
-         .banner-content-wrap {
-            p.banner-desc {
-               padding: 0;
-            }
-
-            h1.banner-title {
-               margin-bottom: 15px;
-            }
-         }
-      }
-
-      .owl-dots {
-         bottom: 110px;
-      }
-   }
+  
 
 
 
@@ -707,10 +519,27 @@ small device /mobile sm and large
 
 }
 @media (max-width: 480px){
+   .header .navbar{
+      padding: 30px 0px;
+   }
+   .hero-area {
+
+      .banner-item{
+         margin: 50px 0px 0px;
+         .banner-content-wrap {
+            padding: 55px 0 15px;
+            .banner-title{
+               font-size: 30px;
+               line-height: 32px;
+            }
+         }
+      }
+   }
+
    .header .navbar-brand {
       padding: 0 ;
       img {
-         max-width: 283px;
+         max-width: 186px;
       }
    }
   .text-title{
@@ -744,7 +573,7 @@ small device /mobile sm and large
    .header .navbar-brand {
       padding: 0 ;
       img {
-         max-width: 258px;
+         max-width: 185px;
         
       }
    }
@@ -756,26 +585,20 @@ small device /mobile sm and large
 
 }
 @media (max-width: 368px){
-   .header .navbar-brand {
-      padding: 0 ;
-      img {
-         max-width: 246px;
-        
-      }
-   }
+ 
    .ts-title {
       font-size: 24px;
       line-height: 26px;
    }
-  
+   .hero-area {
 
-}
-@media (max-width: 356px){
-   .header .navbar-brand {
-      padding: 0 ;
-      img {
-         max-width: 232px;
-        
+      .banner-item{
+         .banner-content-wrap {
+            .banner-title{
+               font-size: 24px;
+               line-height: 26px;
+            }
+         }
       }
    }
   
@@ -784,13 +607,7 @@ small device /mobile sm and large
 
 
 @media (max-width: 320px){
-   .header .navbar-brand {
-      padding: 0 ;
-      margin-right: 0rem;
-      img {
-         max-width: 230px;
-      }
-   }
+ 
    .btn{
       font-size: 17px;
    }
@@ -819,13 +636,7 @@ small device /mobile sm and large
      
 }
 @media (max-width: 300px){
-   .header .navbar-brand {
-      padding: 0 ;
-      margin-right: 0rem;
-      img {
-         max-width: 200px;
-      }
-   }
+ 
    .ts-schedule-white{
       
       p{

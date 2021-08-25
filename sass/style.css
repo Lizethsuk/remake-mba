@@ -117,12 +117,6 @@ h1 {
   font-weight: 900;
 }
 
-h2 {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-}
-
 h3 {
   font-size: 24px;
   margin-bottom: 20px;
@@ -831,7 +825,7 @@ img.pull-right {
 }
 
 .hero-area .banner-item .banner-content-wrap {
-  padding: 175px 0;
+  padding: 155px 0 190px;
 }
 
 .hero-area .banner-item .banner-content-wrap .title-shap-img {
@@ -868,7 +862,7 @@ img.pull-right {
 
 .features-icons {
   background-color: #F2F4F9;
-  padding-bottom: 130px !important;
+  padding-bottom: 190px !important;
 }
 
 .features-icons .media-body {
@@ -947,6 +941,10 @@ img.pull-right {
   color: #FFFFFF;
 }
 
+.section-events .schedule-card .card-identity .speaker {
+  border-radius: 200px;
+}
+
 .section-events .schedule-card .schedule-content {
   text-align: center;
   padding: 30px;
@@ -965,8 +963,14 @@ img.pull-right {
   }
 }
 
+.section-contact {
+  border-top: 15px solid #c1b170;
+  background-color: #F2F4F9;
+}
+
 .section-contact .pb_pricing_v1 {
   border: 2.5px solid #c1b170;
+  background-color: #FFFFFF;
 }
 
 .section-contact .pb_pricing_v1 .price {

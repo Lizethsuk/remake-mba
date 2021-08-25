@@ -341,7 +341,7 @@
          min-height: auto;
          background-position: top center;
          .banner-content-wrap{
-            padding: 175px 0;
+            padding: 155px 0 190px;
             .title-shap-img{
                margin-bottom: 20px;
                max-width: 70px;
@@ -380,7 +380,7 @@
 
 .features-icons{
    background-color: #F2F4F9;
-   padding-bottom: 130px !important ;
+   padding-bottom: 190px !important ;
    .media-body{
       padding: 18px 28px;
       position: relative;
@@ -445,6 +445,9 @@
          .name-exp{
             color: #FFFFFF;
          }
+         .speaker{
+            border-radius: 200px;
+         }
 
       }
       .schedule-content{
@@ -470,8 +473,11 @@
 }
 
 .section-contact{
+   border-top: 15px solid $primary-color;
+   background-color: #F2F4F9;
    .pb_pricing_v1{
       border: 2.5px solid $primary-color;
+      background-color: #FFFFFF;
       .price{
          color: #888888;
          font-weight: bold;
