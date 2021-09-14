@@ -141,7 +141,7 @@ a:hover {
 }
 
 a.read-more {
-  color: #c1b170;
+  color: #8AC63F;
   font-weight: 700;
 }
 
@@ -361,14 +361,14 @@ img.pull-right {
 }
 
 .btn-link:hover {
-  color: #c1b170;
+  color: #8AC63F;
 }
 
 .section-title,
 .column-title {
   font-size: 37px;
   font-weight: bold;
-  color: #c1b170;
+  color: #8AC63F;
   position: relative;
   padding-bottom: 0px;
   margin-bottom: 60px;

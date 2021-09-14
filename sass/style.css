@@ -174,7 +174,7 @@ a:hover {
 }
 
 a.read-more {
-  color: #c1b170;
+  color: #8AC63F;
   font-weight: 700;
 }
 
@@ -394,14 +394,14 @@ img.pull-right {
 }
 
 .btn-link:hover {
-  color: #c1b170;
+  color: #8AC63F;
 }
 
 .section-title,
 .column-title {
   font-size: 37px;
   font-weight: bold;
-  color: #c1b170;
+  color: #8AC63F;
   position: relative;
   padding-bottom: 0px;
   margin-bottom: 60px;
@@ -584,7 +584,7 @@ img.pull-right {
 }
 
 .header ul.navbar-nav > li > a:hover {
-  color: #c1b170;
+  color: #8AC63F;
 }
 
 .header ul.navbar-nav > li.header-ticket {
@@ -600,7 +600,7 @@ img.pull-right {
 }
 
 .header ul.navbar-nav > li.header-ticket .ticket-btn:hover {
-  background: #c1b170;
+  background: #8AC63F;
 }
 
 .header ul.navbar-nav li .dropdown-menu {
@@ -622,7 +622,7 @@ img.pull-right {
 }
 
 .header ul.navbar-nav li .dropdown-menu li a:hover {
-  color: #c1b170;
+  color: #8AC63F;
 }
 
 .header ul.navbar-nav li .dropdown-menu li:last-child a {
@@ -715,11 +715,11 @@ img.pull-right {
 }
 
 .header.header-classic ul.navbar-nav > li > a:hover {
-  color: #c1b170;
+  color: #8AC63F;
 }
 
 .header.header-classic ul.navbar-nav > li.active > a {
-  color: #c1b170;
+  color: #8AC63F;
 }
 
 .header .sticky-none {
@@ -777,7 +777,7 @@ img.pull-right {
 
 .line-color0 {
   width: 100%;
-  color: #c1b170;
+  color: #8AC63F;
   border: 4px solid;
   margin-bottom: 35px;
 }
@@ -791,12 +791,22 @@ img.pull-right {
 
 .pb_form_v1 {
   padding: 40px;
-  background-color: rgba(18, 18, 18, 0.9);
+  background-color: #565656;
   max-width: 590px;
 }
 
+.pb_form_v1 .form-control {
+  background-color: #565656;
+  color: #FFFFFF !important;
+  border: 2px solid #8AC63F;
+}
+
+.pb_form_v1 .input2 {
+  color: aqua !important;
+}
+
 .pb_form_v1 a {
-  color: #c1b170;
+  color: #8AC63F;
 }
 
 .pb_form_v1 .btn {
@@ -895,11 +905,22 @@ img.pull-right {
 .features-icons .media-body blockquote::before {
   content: '“';
   font-size: 160px;
-  color: #dee2e6;
+  color: #8AC63F;
   font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
   position: absolute;
   top: 28px;
   left: 0px;
+  z-index: 0;
+}
+
+.features-icons .media-body blockquote::after {
+  content: '”';
+  font-size: 160px;
+  color: #8AC63F;
+  font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
+  position: absolute;
+  bottom: 28px;
+  right: 0px;
   z-index: 0;
 }
 
@@ -922,10 +943,16 @@ img.pull-right {
 
 .section-events .features-icons-item {
   text-align: center;
+  border: 6px solid #8AC63F;
+  padding: 18px;
+  border-radius: 120px;
+  max-width: 260px;
 }
 
 .section-events .features-icons-item img {
   margin-bottom: 25px;
+  max-width: 160px;
+  width: 100%;
 }
 
 .section-events .features-icons-item h3 {
@@ -980,35 +1007,85 @@ img.pull-right {
 
 .section-contact {
   border-top: 15px solid #8AC63F;
-  background-color: #F6F9F2;
+  background-color: #565656;
 }
 
 .section-contact .pb_pricing_v1 {
-  border: 2.5px solid #8AC63F;
-  background-color: #FFFFFF;
+  border: 5.5px solid #FFFFFF;
+  border-radius: 200px;
+  padding: 20px 50px;
 }
 
 .section-contact .pb_pricing_v1 .price {
-  color: #888888;
+  color: #8AC63F;
   font-weight: bold;
   font-size: 19px;
+}
+
+.section-contact .pb_pricing_v1 p {
+  color: #FFFFFF;
+}
+
+/*==========================
+      Speakers
+===========================*/
+.speakers {
+  background-color: #C2E09B;
+}
+
+.speakers .big-subtitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 47px;
+  margin-bottom: 35px;
+}
+
+.speakers .schedule-card {
+  background-color: #2e2f21;
+  display: inline-block;
+  margin: 0px auto;
+  border-radius: 200px;
+  padding: 20px;
+  max-width: 250px;
+  width: 100%;
+  max-height: 760px;
+  height: 100%;
+  margin-bottom: 15px;
+}
+
+.speakers .schedule-card .card-identity {
+  width: 100%;
+}
+
+.speakers .schedule-card .card-identity .speaker {
+  border-radius: 200px;
+  border: 2px solid #FFFFFF;
 }
 
 /*==========================
       footer area
 ===========================*/
 .pb_footer {
-  background-color: #EDEDEE;
+  background-color: #8AC63F;
   padding: 35px 0 15px;
 }
 
-.pb_footer a {
-  color: #222222;
+.pb_footer .list-inline-item {
+  width: 50px;
+  height: 50px;
+  border-radius: 200px;
+  border: 3px solid #fff;
+}
+
+.pb_footer .list-inline-item a {
+  color: #fff;
+  font-size: 25px;
+  line-height: 45px;
 }
 
 /*------------back to top-------------*/
 .BackTo {
-  background: #c1b170 none repeat scroll 0 0;
+  background: #8AC63F none repeat scroll 0 0;
   border-radius: 50%;
   bottom: 35px;
   color: #979797;
