@@ -30,7 +30,7 @@ tab rotate
 }
 @media (min-width: 992px) and (max-width: 1200px) {
    .navbar-brand img {
-      max-width: 360px;
+      max-width: 160px;
   }
   
    .hero-area .banner-item {
@@ -79,6 +79,9 @@ tab device
 ===========================*/
 
 @media(min-width: 768px) and (max-width: 991px) {
+   .navbar-brand img {
+      max-width: 160px;
+  }
    .ts-title {
       font-size: 27px;
       line-height: 27px;
@@ -407,7 +410,7 @@ small device /mobile sm and large
    .header .navbar-brand {
       padding: 0 ;
       img {
-         max-width: 210px;
+         max-width: 160px;
       }
    }
 
@@ -529,6 +532,14 @@ small device /mobile sm and large
 
 }
 @media (max-width: 480px){
+   .features-icons {
+      .media-body{
+         blockquote{
+            font-size: 23px;
+            line-height: 32px;
+         }
+      }
+   }
    .section-events{
       .big-subtitle{
          font-size: 29px;
@@ -559,7 +570,7 @@ small device /mobile sm and large
    .header .navbar-brand {
       padding: 0 ;
       img {
-         max-width: 186px;
+         max-width: 160px;
       }
    }
   .text-title{
@@ -590,13 +601,7 @@ small device /mobile sm and large
  
 }
 @media (max-width: 375px){
-   .header .navbar-brand {
-      padding: 0 ;
-      img {
-         max-width: 185px;
-        
-      }
-   }
+  
    .ts-title {
       font-size: 24px;
       line-height: 26px;

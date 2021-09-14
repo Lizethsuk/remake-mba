@@ -204,6 +204,11 @@
         &.sticky{
             background: rgba(255,255,255,.95);
             box-shadow: 0 8px 17px rgba(0,0,0,.02);
+            .navbar{
+               img{
+                  width: 15px;
+               }
+            }
         }
     }
 
@@ -249,14 +254,13 @@
       top: 0;
       width: 100%;
       z-index: 99;
-      background: $primary-color;
+      background: #808080;
       padding: 15px 0;
-      .sticky-none {
-         display: none;
-      }  
-      .sticky-block {
-         display: block;
-      }  
+      .navbar-brand{
+         img{
+            width: 160px;
+         }
+      } 
 
 
       a {
@@ -390,7 +394,7 @@
 }
 
 .features-icons{
-   background-color: #F2F4F9;
+   background-color: #F6F9F2;
    padding-bottom: 190px !important ;
    .media-body{
       padding: 18px 28px;
@@ -486,10 +490,10 @@
 }
 
 .section-contact{
-   border-top: 15px solid $primary-color;
-   background-color: #F2F4F9;
+   border-top: 15px solid #8AC63F;
+   background-color: #F6F9F2;
    .pb_pricing_v1{
-      border: 2.5px solid $primary-color;
+      border: 2.5px solid #8AC63F;
       background-color: #FFFFFF;
       .price{
          color: #888888;
