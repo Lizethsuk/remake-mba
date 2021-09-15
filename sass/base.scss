@@ -22,7 +22,7 @@
 @import 'mixin';
 
 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @font-face {
@@ -79,7 +79,6 @@ p {
     font-family: 'Raleway';
     line-height: 26px;
     font-size: 16px;
-    color: #888888;
     font-weight: 400;
 }
 
@@ -90,8 +89,7 @@ h4,
 h5,
 h6 {
    font-family: "Montserrat", Arial, sans-serif;
-    color: #1c1c24;
-   
+
 }
 
 h1 {
@@ -148,12 +146,11 @@ a:hover {
     text-decoration: none;
 }
 a.read-more {
-    color: $primary-color;
     font-weight: 700;
 }
-a.read-more:hover {
-    color: #222;
-}
+// a.read-more:hover {
+//     color: #222;
+// }
 .body-color{
    background: #FFFFFF;
    color: $white-color;
@@ -279,7 +276,6 @@ img.pull-right {
    font-family: 'GT Pressura';
    font-size: 18px;
    font-weight: 700;
-   color: $white-color;
    text-transform: uppercase;
 
    background: #8AC63F;
@@ -296,13 +292,13 @@ img.pull-right {
       
    }
    &:hover{
-      color: $white-color;
+
       background: $gray-color;
    }
    &.fill{
       background: transparent;
       padding: 0 25px;
-      color: $gray-color;
+
       margin-left: 20px;
       border: 2px solid $white-color;
       &:hover{
@@ -318,16 +314,16 @@ img.pull-right {
 .btn-link{
    font-size: 16px;
    font-weight: 700;
-   color: $title-color;
+
    text-decoration: none !important;
    i{
       margin-left: 6px;
       position: relative;
       top: 2px;
    }
-   &:hover{
-      color: $primary-color;
-   }
+  //  &:hover{
+  //     color: $primary-color;
+  //  }
 }
 
 // default title set
@@ -353,7 +349,6 @@ img.pull-right {
       font-family: $roboto;
       font-weight: 400;
       line-height: 26px;
-      color: #888888;
       text-transform: uppercase;
       letter-spacing: 1.4px;
       margin-bottom: 10px;
@@ -440,7 +435,7 @@ img.pull-right {
 			a {
 				@include border-radius(50%);
 				margin-right: 8px;
-            color: #7c7c7c;
+     
             width: 40px;
             height: 40px;
             padding: 10px 0;
@@ -453,7 +448,7 @@ img.pull-right {
 .pagination>.active>a,
 .pagination>.active>a:hover,
 .pagination>li>a:hover {
-	color: #fff;
+  color: #fff;
 	background: #ff0763;
 	border: 1px solid transparent;
 }
