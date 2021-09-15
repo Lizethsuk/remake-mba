@@ -306,15 +306,23 @@
    font-weight: 400;
    color: #3f3f3f;
  }
+.form-content {
+  color: #FFFFFF!important;
+}
+
 .pb_form_v1{
    padding: 40px;
    background-color: #565656;
    max-width: 590px;
+   color: #FFFFFF!important;
    .form-control {
       background-color: #565656;
       color: #FFFFFF!important;
       border: 2px solid $primary-color;
    }
+   ::placeholder { 
+    color:    #FFFFFF;
+ }
    .input2{
       color: aqua!important;
    }
@@ -538,15 +546,30 @@
       Speakers
 ===========================*/
 .speakers{
+   background-image:  url('../images/shap/shap2.png'), url('../images/shap/shap1.png') ;
+   background-position: right bottom, left top;
+   background-repeat: no-repeat, no-repeat;
+   background-repeat: no-repeat;
    background-color: #C2E09B;
+
    .big-subtitle{
       text-align: center;
-      font-weight: bold;
       font-size: 47px;
       margin-bottom: 35px;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
    }
+   .big-subtitle-text{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+ }
+   
    .schedule-card{
       background-color: #2e2f21;
+      color: #FFFFFF;
       display: inline-block;
       margin: 0px auto;
       border-radius: 200px;
@@ -556,12 +579,41 @@
       max-height: 760px;
       height: 100%;
       margin-bottom: 15px;
+      text-align: center !important;
+      .name-exp {
+         padding-top: 10px;
+         color: #8CC63F !important;
+         margin-block-end: 0px;
+         font-size: 25px;
+         font-family: 'Raleway', sans-serif;
+         font-weight: 600;
+      }
+      .date-exp{
+        font-size: 13px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+      }
+      .position-exp{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+         font-size: 15px;
+      }
       .card-identity{
          width: 100%;
          .speaker{
             border-radius: 200px;
             border: 2px solid #FFFFFF
          }
+      }
+      .description-expo{
+        font-size: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+      }
+      .description-expo-2{
+        font-size: 17px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
       }
       
    }
