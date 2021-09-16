@@ -541,6 +541,10 @@ img.pull-right {
 /*==========================
       header area
 ===========================*/
+.modal {
+  color: #797979;
+}
+
 .header .navbar {
   padding: 60px 0 10px;
 }
@@ -1156,7 +1160,7 @@ img.pull-right {
 ===========================*/
 .pb_footer {
   background-color: #8AC63F;
-  padding: 35px 0 15px;
+  padding: 75px 0 45px;
 }
 
 .pb_footer .list-inline {

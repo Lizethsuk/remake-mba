@@ -41,6 +41,10 @@
 /*==========================
       header area
 ===========================*/
+.modal{
+   color: #797979;
+}
+
 .header {
    .navbar {
       padding: 60px 0 10px;
@@ -649,7 +653,7 @@
 ===========================*/
 .pb_footer{
    background-color: $primary-color;
-   padding: 35px 0 15px;
+   padding: 75px 0 45px;
    .list-inline{
       margin-bottom: 10px;
       .list-inline-item{
