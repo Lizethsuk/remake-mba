@@ -138,7 +138,8 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <select aria-label="ciudad_de_residencia" name="ciudad_de_residencia" id="ciudad_de_residencia"
-                      required class="form-control mb-3">
+                    v-model='payload.ciudad_de_residencia'  
+                    required class="form-control mb-3">
                       <option value="">Selecciona tu ciudad de residencia</option>
                       <option value="Arequipa">Arequipa</option>
                       <option value="Cajamarca">Cajamarca</option>
@@ -156,7 +157,7 @@
                   </div>
                   <div class="col-sm-12">
                     <div class="form-group  ">
-                      <input type="text" placeholder="Nombres" name="nombres" id="nombres" required="required"
+                      <input type="text" v-model='payload.nombres' placeholder="Nombres" name="nombres" id="nombres" required="required"
                         class="form-control form-content ">
                     </div>
                   </div>
@@ -166,7 +167,7 @@
                   <div class="col-sm-12">
                     <div class="form-group">
                       <input class="form-control pb_height-50 reverse" type="text" name="apellido_paterno"
-                        id="apellido_paterno" placeholder="Apellido paterno" required="required" class="form-control">
+                        id="apellido_paterno" v-model='payload.apellido_paterno' placeholder="Apellido paterno" required="required" class="form-control">
                     </div>
                   </div>
                 </div>
@@ -175,7 +176,7 @@
 
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <input type="text" name="numero_de_id" id="numero_de_id" placeholder="DNI" required="required"
+                      <input type="text" v-model='payload.numero_de_id'  name="numero_de_id" id="numero_de_id" placeholder="DNI" required="required"
                         class="form-control">
                     </div>
                   </div>
@@ -184,14 +185,14 @@
                   <div class="col-sm-12">
                     <div class="form-group">
                       <input class="form-control pb_height-50 reverse" type="email" name="correo_electrnico"
-                        id="correo_electrnico" placeholder="Email" required="required">
+                        id="correo_electrnico" v-model='payload.correo_electrnico'  placeholder="Email" required="required">
                     </div>
                   </div>
 
                   <div class="col-sm-12">
                     <div class="form-group">
 
-                      <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required="required"
+                      <input type="text" v-model='payload.telefono'id="telefono" name="telefono" placeholder="Teléfono" required="required"
                         class="form-control pb_height-50 reverse" />
 
 
@@ -204,14 +205,14 @@
 
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <input type="text" id="empresa" name="empresa" placeholder="Empresa" required="required"
+                      <input type="text" v-model='payload.empresa' id="empresa" name="empresa" placeholder="Empresa" required="required"
                         class="form-control">
                     </div>
                   </div>
 
                   <div class="col-sm-12">
                     <div class="form-group">
-                      <input type="text" type="text" id="cargo" name="cargo" placeholder="Cargo" required="required"
+                      <input type="text" type="text" v-model='payload.cargo' id="cargo" name="cargo" placeholder="Cargo" required="required"
                         class="form-control">
                     </div>
                   </div>
@@ -780,7 +781,7 @@
               payload: this.payload,
             }
 
-            // console.log(this.payload);
+            console.log(this.payload);
             var limit = informationRequest.retry_sending_times;
             var attempts_count = informationRequest.attempted_sendings_count;
             var miliseconds_delay = informationRequest.seconds_before_next_attempt * 1000;
@@ -790,9 +791,11 @@
               information_request
             )
               .then(function (response) {
+
                 console.log(response.data);
                 if (response.data.information_requested) {
                   // Ir a la página de gracias
+                  console.log("listo");
                   window.location.href = 'https://www.esan.edu.pe/mails/prueba-nativa/2021/foro-sostenibilidad/gracias/';
                   informationRequest.sending = false;
                 } else {
