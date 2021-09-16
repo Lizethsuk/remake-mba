@@ -57,6 +57,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Quincy';
+  src: url("../fonts/QuincyCF-Black.otf");
+  src: url("../fonts/QuincyCF-Black.otf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN';
+  src: url("../fonts/din-alternate-bold.ttf");
+  src: url("../fonts/din-alternate-bold.ttf") format("truetype");
+}
+
 /* ============================== */
 /* Typography
 ================================================== */
@@ -292,7 +305,7 @@ img.pull-right {
 }
 
 .btn {
-  font-family: 'GT Pressura';
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;

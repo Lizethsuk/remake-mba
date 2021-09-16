@@ -313,12 +313,15 @@
 .pb_form_v1{
    padding: 40px;
    background-color: #565656;
-   max-width: 590px;
+   max-width: 450px;
    color: #FFFFFF!important;
+   font-family: $roboto;
    .form-control {
       background-color: #565656;
       color: #FFFFFF!important;
       border: 2px solid $primary-color;
+      border-radius: 18px;
+      font-family: $roboto;
    }
    ::placeholder { 
     color:    #FFFFFF;
@@ -366,10 +369,11 @@
          margin: 75px 50px 0;
          min-height: auto;
          background-position: top center;
+      
          .banner-content-wrap{
-            padding: 155px 0 190px;
+            font-family: $raleway;
             .title-shap-img{
-               margin-bottom: 20px;
+               margin-bottom: 200px;
                max-width: 70px;
             }
             .banner-title{
@@ -382,11 +386,11 @@
             }
             .banner-info{
                margin-bottom: 35px;
-               font-style: italic;
                p{
-                  font-size: 27px;
-                  line-height: 32px;
+                  font-size: 25px;
+                  line-height: 42px;
                   color: $white-color;
+                  font-weight: bold;
                }
             }
             .banner-p{
@@ -410,80 +414,80 @@
 }
 
 .features-icons{
-   background-color: #F6F9F2;
-   padding-bottom: 190px !important ;
+   padding-bottom: 110px !important ;
+   h3{
+      font-family: $raleway;
+      color: $primary-color;
+      font-size: 48px;
+      font-weight: 550;
+   }
+   p{
+      color: #000000;
+      font-family: 'Montserrat';
+      font-size: 18px;
+      line-height: 21px;
+   }
    .media-body{
       padding: 18px 28px;
       position: relative;
-      blockquote{
-         color: #222222;
-         font-size: 34px;
-         line-height: 44px;
-         text-align: center;
-         font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
-         &::before{
-            content: '“';
-            font-size: 160px;
-            color: #8AC63F;
+      margin: 80px auto 5px;
 
-            font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
+      z-index:0;
+      color: #222222;
+         font-size: 20px;
+         line-height: 24px;
+         text-align: center;
+         font-family: 'Quincy';
+         max-width: 430px;
+         width: 100%;
+       
+         &::before{
+            content: url('../images/iconos/blockq1.png');
             position: absolute;
-            top: 28px;
-            left: 0px;
-            z-index: 0;
+            top: -25px;
+            left: -25px;
+            z-index: -2;
             
          }
          &::after{
-            content: '”';
-            font-size: 160px;
-            color: #8AC63F;
-
-            font-family: "Crimson Text", Georgia, "Times New Roman", Times, serif;
+            content: url('../images/iconos/blockq2.png');
             position: absolute;
-            bottom: 28px;
-            right: 0px;
-            z-index: 0;
-            
-         } 
+            bottom: -19px;
+            right: -25px;
+            z-index: -3;
+              
       }
    }
 }
-.features-icons:after{
-  content: "";
-  position: absolute;
-  bottom: -100px;
-  left: -50px;
-  height: 200px;
-  width: 130%;
-  background-color: #fff;
-  -webkit-transform: rotate(-4deg);
-  transform: rotate(-4deg);
-  z-index: 10;
-}
+
 .section-events{
   padding-top: 140px;
    .features-icons-item{
       text-align: center;
       border: 6px solid $primary-color;
       padding: 18px;
-      border-radius: 120px;
+      border-radius: 130px;
       max-width: 260px;
       
       img{
-         margin-bottom: 25px;
-         max-width: 160px;
+         margin-bottom: 35px;
+         max-width: 150px;
          width: 100%;
+         padding-top: 10px;
       }
       h3{
-         font-size: 28px;
+         font-size: 25px;
          color:#797979;
+         padding-bottom: 10px;
       }
    }
    .big-subtitle{
       text-align: center;
-      font-weight: bold;
+      font-weight: 450;
       font-size: 47px;
       margin-bottom: 35px;
+      font-family: $raleway;
+      color:#242424;
    }
    .schedule-card{
       margin-bottom: 15px;
@@ -527,9 +531,10 @@
    border-top: 15px solid #8AC63F;
    background-color: #565656;
    .pb_pricing_v1{
-      border: 5.5px solid #FFFFFF;
+      border: 7.5px solid #FFFFFF;
       border-radius: 200px;
       padding: 20px 50px;
+      font-weight: 500;
       
       .price{
          color: $primary-color;
@@ -539,7 +544,24 @@
       }
       p{
          color: #FFFFFF;
+         font-weight: 500;
+         
+         font-size: 18px;
+         margin-bottom: 5px;
       }
+      strong{
+         font-size: 29px;
+      }   
+      a{
+         color: #FFFFFF!important;
+         font-weight: bold;
+      }
+     
+   }
+   .btn{
+      font-size: 30px;
+      color: #FFFFFF;
+      font-family: $raleway;
    }
 }
 /*==========================
@@ -556,8 +578,9 @@
       text-align: center;
       font-size: 47px;
       margin-bottom: 35px;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Raleway';
       font-weight: 600;
+      color: #797979;
    }
    .big-subtitle-text{
     text-align: center;
@@ -565,6 +588,7 @@
     margin-bottom: 35px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    color: #797979;
  }
    
    .schedule-card{
@@ -626,18 +650,28 @@
 .pb_footer{
    background-color: $primary-color;
    padding: 35px 0 15px;
-   .list-inline-item{
-      width: 50px;
-         height: 50px;
-         border-radius: 200px;
-         border: 3px solid $white-color;
-      a{
-         color: $white-color;
-         
-         font-size: 25px;
-         line-height: 45px;
-         
+   .list-inline{
+      margin-bottom: 10px;
+      .list-inline-item{
+         width: 50px;
+            height: 50px;
+            border-radius: 200px;
+            border: 2px solid $white-color;
+         a{
+            color: $white-color;
+            
+            font-size: 22px;
+            line-height: 48px;
+            
+         }
       }
+   }
+   
+   small{
+      font-size: 35px;
+      font-weight: bold;
+      font-family: 'DIN';
+      padding-top: 20px;
    }
 }
 

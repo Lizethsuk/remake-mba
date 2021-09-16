@@ -87,19 +87,19 @@
       <div class="banner-item d-flex align-item-center">
         <div class="container d-flex align-item-center">
           <div class="row ">
-            <div class="col-lg-5 d-flex align-item-center mx-auto">
-              <div class="banner-content-wrap d-flex align-item-center flex-column">
+            <div class="col-lg-6 d-flex align-item-center mx-auto">
+              <div class="banner-content-wrap d-flex align-items-start justify-content-center flex-column">
 
                 <!-- Countdown end -->
-                <img src="images/logos/logo-foro.png" alt="">
+                <img src="images/logos/logo-foro.png" alt="" style="max-width: 490px; width:100%; margin-bottom: 10px;">
 
                 <div class="banner-info wow fadeInUp" data-wow-duration="1s" data-wow-delay="300ms">
                   <p class="mb-1">
-                    <i class="fa fa-calendar-check-o" style="font-size:26px;color:#eeeeee; width: 40px;"></i>
+                   <img src="images/iconos/fecha.png" alt="">
                     <span> 9 de noviembre </span><br>
-                    <i class="fa fa-clock-o" style="font-size:28px;color:#eeeeee; width: 40px;"></i>
+                    <img src="images/iconos/hora.png" alt="">
                     <span> 7:30 p.m.</span><br>
-                    <i class="fa fa-play-circle" style="font-size:28px;color:#eeeeee; width: 40px;"></i>
+                    <img src="images/iconos/zoom.png" alt="">
                     <span>Plataforma ZOOM</span><br>
 
 
@@ -113,7 +113,7 @@
               </div>
               <!-- Banner content wrap end -->
             </div><!-- col end-->
-            <div class="form-content col-lg-6 col-12 relative align-self-center pt-5 pb-5 mx-auto"
+            <div class="form-content col-lg-6 col-12 relative align-self-center pt-5  mx-auto"
               id="application-root">
 
               <form v-on:submit.prevent="sendInformationRequest()" class="rounded pb_form_v1">
@@ -154,7 +154,7 @@
                     </select>
 
                   </div>
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-group  ">
                       <input type="text" placeholder="Nombres" name="nombres" id="nombres" required="required"
                         class="form-control form-content ">
@@ -163,7 +163,7 @@
 
 
 
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-group">
                       <input class="form-control pb_height-50 reverse" type="text" name="apellido_paterno"
                         id="apellido_paterno" placeholder="Apellido paterno" required="required" class="form-control">
@@ -172,14 +172,8 @@
                 </div>
                 <div class="row">
 
-                  <div class="col-sm-6">
-                    <div class="form-group" id="elApellidoMaterno">
-                      <input type="text" name="apellido_Materno" id="apellido_Materno" placeholder="Apellido materno"
-                        required="required" class="form-control">
-                    </div>
-                  </div>
 
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-group">
                       <input type="text" name="numero_de_id" id="numero_de_id" placeholder="DNI" required="required"
                         class="form-control">
@@ -187,14 +181,14 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-group">
                       <input class="form-control pb_height-50 reverse" type="email" name="correo_electrnico"
                         id="correo_electrnico" placeholder="Email" required="required">
                     </div>
                   </div>
 
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-group">
 
                       <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required="required"
@@ -208,14 +202,14 @@
 
                 <div class="row">
 
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-group">
                       <input type="text" id="empresa" name="empresa" placeholder="Empresa" required="required"
                         class="form-control">
                     </div>
                   </div>
 
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-group">
                       <input type="text" type="text" id="cargo" name="cargo" placeholder="Cargo" required="required"
                         class="form-control">
@@ -227,7 +221,7 @@
 
                 <div class="form-group">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="acepta_politica_de_privacidad"
+                    <input class="form-check-input" type="radio" id="acepta_politica_de_privacidad"
                       v-model='payload.acepta_politica_de_privacidad' required>
                     <label class="form-check-label" for="gridCheck">
                       Acepto las <a href="#politica-de-proteccion-de-datos" data-toggle="modal"
@@ -276,28 +270,16 @@
 
 
           <div class="col-lg-5">
-
+<h3>Presentación</h3>
             <p>
-              <strong>Presentación</strong> <br>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident qui ut, fuga voluptatem, autem nisi
-              nobis corporis eius rerum ipsum quae voluptatibus architecto voluptas possimus dolorem perferendis
-              temporibus quaerat? Inventore.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minima deserunt omnis quas ullam corporis
-              dicta debitis, quasi eaque provident ipsam sit reprehenderit autem. Repellendus neque qui sed dolores!
-              Porro?
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quaerat quas saepe facere quos
-              doloremque voluptatibus, debitis reiciendis eaque quam repellat nesciunt in recusandae doloribus alias
-              libero blanditiis possimus.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minima molestias laudantium, dolorum
-              necessitatibus vel eligendi ex aspernatur similique dicta quod commodi eos eveniet architecto ut at
-              expedita cupiditate. Doloribus!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident qui ut, fuga voluptatem, autem nisi nobis corporis eius rerum ipsum quae voluptatibus architecto voluptas possimus dolorem perferendis temporibus quaerat? Inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minima deserunt omnis quas ullam corporis dicta debitis, quasi eaque provident ipsam sit reprehenderit autem. Repellendus neque qui sed dolores! Porro? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dolore quaerat quas saepe facere quos doloremque voluptatibus, debitis reiciendis eaque quam repellat nesciunt in recusandae doloribus alias libero blanditiis possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque minima molestias laudantium, dolorum necessitatibus vel eligendi ex aspernatur similique dicta quod commodi eos eveniet architecto ut at expedita cupiditate. Doloribus!
 
             </p>
           </div>
           <div class="col-lg-7">
-
+            <h3>Objetivo</h3>
             <p>
-              <strong>Objetivo</strong> <br>
+             
               El evento tiene como objetivo presentar, con un enfoque global, los impactos del COVID-19 en la economía,
               las empresas y la forma de hacer negocios.
               Además, se brindarán alcances sobre los retos y oportunidades, en este contexto especial, que presentan la
@@ -306,23 +288,14 @@
 
             </p>
             <div class="media-body">
-              <blockquote class="mb-4">
-
-                La acción individual para la sostenibilidad no es suficiente: las empresas deben adoptar una portura en
-                las políticas.
-                La posibilidad de que se produzca un verdadero cambio transformador viene de la mano de la colaboración
-                ”
-              </blockquote>
+              La acción individual para la sostenibilidad no es suficiente: las empresas deben adoptar una portura en
+              las políticas.
+              La posibilidad de que se produzca un verdadero cambio transformador viene de la mano de la colaboración
+             
 
 
             </div>
 
-            <p>
-              <strong>Dirigido a</strong> <br>
-              MBAs, Empresarios y futuros MBAs. Ejecutivos en general.
-
-
-            </p>
 
           </div>
 
@@ -391,11 +364,11 @@
     <section class="speakers speakers-image2">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 pr-md-5 pr-sm-0 order-1  mb-5">
+          <div class="col-lg-9 mx-auto  mb-5">
             <div class="row">
               <div class="col">
                 <h3 class="big-subtitle">Programa</h3>
-                <h3 class="big-subtitle-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident qui ut, fuga luptatem, autem nisi nobis corporis eius rerum ipsum quae voluptatibus architecto voluptas possimus dolorem perferendis temporibus quaerat? Inventore. Lorem ipsum  </h3>
+                <h3 class="big-subtitle-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident qui ut, fuga luptatem, autem nisi nobis corporis eius rerum ipsum quae voluptatibus architecto voluptas possimus dolorem perferendis temporibus quaerat? Inventore. Lorem ipsum 
               </div>
             </div>
 
@@ -404,8 +377,8 @@
 
         <div class="row">
 
-          <div class="col-lg-4">
-            <div class="schedule-card">
+          <div class="col-lg-4 mt-4 text-center">
+            <div class="schedule-card ">
               <div class="row no-gutters">
                 <div class="col-12">
                   <div class="card-identity">
@@ -427,7 +400,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-4 text-center">
             <div class="schedule-card">
               <div class="row no-gutters">
                 <div class="col-12 ">
@@ -451,7 +424,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-4 text-center">
             <div class="schedule-card">
               <div class="row ">
                 <div class="col-12 ">
@@ -476,7 +449,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 mt-4">
+          <div class="col-lg-4 mt-4 text-center">
             <div class="schedule-card">
               <div class="row no-gutters">
                 <div class="col-12 ">
@@ -500,13 +473,13 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mt-4">
+          <div class="col-lg-4 mt-4 text-center">
             <div class="schedule-card">
               <div class="row no-gutters">
                 <div class="col-12 ">
                   <div class="card-identity">
                     <img src="images/expositores/lucas_ivorra2.jpg" alt="" class="speaker">
-                    <h3 class="name-exp">Lucas Ivorra  </h3>
+                    <h3 class="name-exp">Lucas Ivorra <span><img src="images/logos/colombia.png" alt=""></span>  </h3>
                     <span class="position-exp">Profesor de ESAN </span>
                   </div>
                 </div>
@@ -516,7 +489,7 @@
 
                     <h5 class="date-exp"><i class="fa fa-clock-o" style="color:#8CC63F"></i> 02 de setiembre | 11:50
                       a.m.</h5>
-                    <h3 class="description-expo">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+                    <h3 class="description-expo">Oportunidades con el Ecodiseño: Responsabilidad Extendida del Productor.</h3>
                     <h3 class="description-expo-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
 
                   </div>
@@ -529,7 +502,7 @@
     </section>
 
     <section class="pb-5  pt-5 section-contact " id="section-pricing">
-      <div class="container pt-4 pb-5">
+      <div class="container pt-4 pb-1">
         <div class="row justify-content-center mb-4">
           <div class="col-md-6 text-center mb-3">
             <h2 style="color:#a11c6c;"><a href="https://www.esan.edu.pe/mba"><img src="images/logos/logo-w.png"
@@ -545,13 +518,15 @@
               <span class="price">INFORMES E INSCRIPCIONES:
 
               </span>
-              <p><strong>Asesora Comercial:</strong> Siham Hamideh Absi <br>
-                <strong>E-mail:</strong> <a href="mailto:shamideh@esan.edu.pe"
-                  style="color: #868e96; font-weight: 700;">shamideh@esan.edu.pe</a> <br>
-                <strong>Celular:</strong> 942 454 116
+              <p>Asesora Comercial: Siham Hamideh Absi <br>
+               E-mail: <a href="mailto:shamideh@esan.edu.pe"
+                  ></a>shamideh@esan.edu.pe</a> <br>
+               
               </p>
-              <p class="mb-0 text-center"><a href="#top" role="button" class="btn btn-shadow-blue">Regístrate</a></p>
+              <strong>942 454 116</strong>
+            
             </div>
+            <p class="mb-0 text-center mt-5"><a href="#top" role="button" class="btn btn-shadow-blue">Regístrate</a></p>
           </div>
 
 
@@ -576,17 +551,20 @@
               <ul class="list-inline">
                 <li class="list-inline-item"><a href="https://www.facebook.com/esanposgrado" class="p-2"
                     target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="https://twitter.com/esanperu" class="p-2" target="_blank"><i
-                      class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/esanperu" class="p-2" target="_blank"><i
+                      class="fa fa-youtube-play"></i></a></li>
                 <li class="list-inline-item"><a href="https://www.linkedin.com/company/esan/" class="p-2"
                     target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/esanperu" class="p-2" target="_blank"><i
+                      class="fa fa-twitter"></i></a></li>
               </ul>
             </div>
           </div>
           <div class="row">
             <div class="col text-center">
-              <p class="pb_font-14">© 2021 ESAN Graduate School of Business <br> Alonso de Molina 1652, Monterrico,
-                Surco, Lima – Perú <br><small>Telf.: (511) 317-7200</small></p>
+              <p class="pb_font-14">© 2021 ESAN Graduate School of Business <br> Alonso de Molina 1652, Monterrico, <br>
+                Surco, Lima – Perú </p>
+                <small>(511) 317-7200</small>
 
             </div>
           </div>

@@ -349,8 +349,12 @@ small device /mobile sm and large
   .section-events .big-subtitle {
     font-size: 29px;
   }
+  .section-events .features-icons-item {
+    max-width: 200px;
+    width: 100%;
+  }
   .section-events .features-icons-item h3 {
-    font-size: 23px;
+    font-size: 18px;
   }
   .header .navbar {
     padding: 30px 0px;
