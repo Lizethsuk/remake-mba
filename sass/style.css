@@ -923,7 +923,7 @@ img.pull-right {
   color: #000000;
   font-family: 'Montserrat';
   font-size: 18px;
-  line-height: 21px;
+  line-height: 25px;
 }
 
 .features-icons .media-body {
@@ -1095,6 +1095,7 @@ img.pull-right {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: #797979;
+  line-height: 25px;
 }
 
 .speakers .schedule-card {
